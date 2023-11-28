@@ -1,0 +1,112 @@
+#LandingWrapper {
+
+
+    width: 100%;
+    height: 200vh;
+
+
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 10vh 90vh 50vh 40vh 10vh;
+    grid-template-areas:
+        'hd hd'
+        'lm lm'
+        'ls1 ls1'
+        'ls2 la'
+        'ft ft';
+
+
+
+}
+
+#RestaurantWrapper {
+
+
+    width: 100%;
+    height: 100vh;
+
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas:
+        'hd hd'
+        'rm rm'
+        'ft ft';
+
+
+
+}
+
+
+
+body {
+    margin: 0;
+}
+
+
+header {
+    grid-area: hd;
+    background-color: #e67e22;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    height: 10vh;
+}
+
+nav {
+    padding-top: 15px;
+    padding-right: 20px;
+
+
+}
+
+footer {
+    grid-area: ft;
+    background-color: gray;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+
+#LandingMain {
+    grid-area: lm;
+    background-color: blueviolet;
+
+}
+
+#LandingSection1 {
+    grid-area: ls1;
+    background-color: aquamarine;
+}
+
+#LandingSection2 {
+    grid-area: ls2;
+    background-color: red;
+}
+
+#LandingAside {
+    grid-area: la;
+    background-color: yellowgreen;
+}
+
+.center {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:x-large;
+}
+
+
+#RestaurantMain {
+    grid-area: rm;
+    background-color: blueviolet;
+}
