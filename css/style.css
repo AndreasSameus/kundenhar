@@ -143,14 +143,42 @@ a {
 #ForumAside1 {
     grid-area: fa1;
     background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #ForumAside2 {
     grid-area: fa2;
     background-color: #e67e22;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .questionbox {
+    background-color: azure;
+    width: 90%;
+    height: 10%;
+    padding-left: 5px;
+    
+}
+
+#SignInBox {
+    background-color: azure;
+    width: 90%;
+    height: 90%;
+    padding-left: 10px;
+
+}
+input {
+    margin-bottom: 10px;
+    height: 25px;
+    width: 70%;
+}
+
+.newquestionsbox {
     background-color: azure;
     width: 90%;
     height: 10%;
