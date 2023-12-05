@@ -30,8 +30,28 @@
     grid-template-columns: 100%;
     grid-template-rows: 10vh 80vh 10vh;
     grid-template-areas:
+        'hd'
+        'rm'
+        'ft';
+
+
+
+}
+
+#ForumWrapper {
+
+
+    width: 100%;
+    height: 200vh;
+
+
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 10vh 60vh 120vh 10vh;
+    grid-template-areas:
         'hd hd'
-        'rm rm'
+        'fm fa1'
+        'fm fa2'
         'ft ft';
 
 
@@ -109,4 +129,29 @@ a {
 #RestaurantMain {
     grid-area: rm;
     background-color: blueviolet;
+}
+
+#ForumMain {
+    grid-area: fm;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#ForumAside1 {
+    grid-area: fa1;
+    background-color: yellowgreen;
+}
+
+#ForumAside2 {
+    grid-area: fa2;
+    background-color: #e67e22;
+}
+
+.questionbox {
+    background-color: azure;
+    width: 90%;
+    height: 10%;
 }
