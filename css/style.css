@@ -28,7 +28,7 @@
 
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-rows: 10vh 160vh 10vh;
     grid-template-areas:
         'hd'
         'rm'
@@ -119,6 +119,14 @@ footer {
     text-align: center;
 }
 
+.BrandName {
+    padding-top: 10px;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    padding-left: 41%;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -128,19 +136,29 @@ a {
 
 #ForumMain {
     grid-area: fm;
-    background-color: yellowgreen;
+    background-color: #E6AF2E;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    position: sticky;
+    overflow-y: scroll;
+
 }
 
 #ForumAside1 {
     grid-area: fa1;
-    background-color: yellowgreen;
+    background-color:#e67e22;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-style: solid ;
+    border-left-width: 2px;
+    border-top: 0;
+    border-right: 0;
+    border-bottom-width: 2px;
+    border-color: black;
+
 }
 
 #ForumAside2 {
@@ -150,10 +168,19 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    position: sticky;
+    border-style: solid ;
+    border-left-width: 2px;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-color: black;
+
+
 }
 
 .questionbox {
-    background-color: azure;
+    background-color: white;
     width: 90%;
     height: 10%;
     padding-left: 5px;
@@ -164,7 +191,7 @@ a {
 }
 
 .ForumHead {
-    background-color: azure;
+    background-color: white;
     width: 90%;
     height: 4%;
     padding-left: 5px;
@@ -172,6 +199,7 @@ a {
     border-width: 2px;
     border-color: black;
 }
+
 .Question {
     font-size: 1.5rem;
 }
@@ -188,11 +216,32 @@ a {
     font-size: 1.5rem;
 }
 
+.NewQuestion {
+    font-size: 0.7rem;
+}
+
+.NewReplies {
+    position: absolute; 
+    left: 240px;
+    font-size: 0.7rem;
+    padding-top: 4px;
+}
+
+.NewSent {
+    position: absolute;
+    left: 290px;
+    font-size: 0.7rem;
+    padding-top: 4px;
+}
+
 #SignInBox {
-    background-color: azure;
+    background-color: white;
     width: 90%;
     height: 90%;
     padding-left: 10px;
+    border-style: solid ;
+    border-width: 2px;
+    border-color: black;
 
 }
 
@@ -203,7 +252,7 @@ input {
 }
 
 .newquestionsbox {
-    background-color: azure;
+    background-color: white;
     width: 90%;
     height: 10%;
     padding-left: 5px;
@@ -215,7 +264,7 @@ input {
 
 #RestaurantMain {
     grid-area: rm;
-    background-color: blueviolet;
+    background-color: #4B4266;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -223,25 +272,33 @@ input {
 }
 
 .RestaurantLayout {
-    height: 35vh;
+    height: 70vh;
     width: 30%;
-    background-color: aliceblue;
+    background-color: #E6AF2E;
 }
 
 .RestaurantTitle {
     height: 10%;
     width: 100%;
-    background-color: aqua;
+    background-color:#e67e22;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.RestaurantInfo {
+    padding-left: 5px;
+    font-size: 1.1rem;
 }
 
 .RestaurantImg {
-    height: 60%;
+    height: 40%;
     width: 100%;
     background-color: red;
 }
 
 .SeaFood-RestaurantIMG {
-    height: 60%;
+    height: 40%;
     width: 100%;
     background-image: url(../img/SeaFood-Restaurant2.jpg);
     background-size: cover;
@@ -249,15 +306,16 @@ input {
 }
 
 .SteakHouseIMG {
-    height: 60%;
+    height: 40%;
     width: 100%;
     background-image: url(../img/SteakHouse.jpg);
     background-size: cover;
 }
 
 .SushiRestaurantIMG {
-    height: 60%;
+    height: 40%;
     width: 100%;
     background-image: url(../img/SushiRestaurant.jpg);
     background-size: cover;
 }
+
