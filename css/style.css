@@ -96,24 +96,52 @@ footer {
 
 #LandingMain {
     grid-area: lm;
-    background-color: blueviolet;
+    background-image: url(../img/New-Food.jpg);
+    background-size: cover;
 
 }
 
 #LandingSection1 {
     grid-area: ls1;
-    background-color: aquamarine;
+    background-color: #4B4266;
+    border-style: solid ;
+    border-left: 0;
+    border-top-width: 2px;
+    border-right: 0;
+    border-bottom-width: 2px;
+    border-color: black;
+    text-align: center;
+    font-size: 2rem;
+    color: #e67e22;
 }
+    
 
 #LandingSection2 {
     grid-area: ls2;
-    background-color: red;
+    text-align: center;
+    background-color: #e67e22;
+    border-style: solid ;
+    border-left: 0;
+    border-top: 0;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-color: black;
 }
 
 #LandingAside {
     grid-area: la;
-    background-color: yellowgreen;
+    background-color:  #e67e22;
+    border-style: solid;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom-width: 2px;
+    border-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .center {
     text-align: center;
@@ -136,7 +164,7 @@ a {
 
 #ForumMain {
     grid-area: fm;
-    background-color: #E6AF2E;
+    background-color: #4B4266; 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -148,7 +176,7 @@ a {
 
 #ForumAside1 {
     grid-area: fa1;
-    background-color:#e67e22;
+    background-color:#E6AF2E;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,7 +191,7 @@ a {
 
 #ForumAside2 {
     grid-area: fa2;
-    background-color: #e67e22;
+    background-color: #E6AF2E;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -291,11 +319,6 @@ input {
     font-size: 1.1rem;
 }
 
-.RestaurantImg {
-    height: 40%;
-    width: 100%;
-    background-color: red;
-}
 
 .SeaFood-RestaurantIMG {
     height: 40%;
@@ -319,3 +342,58 @@ input {
     background-size: cover;
 }
 
+.ChineseRestaurantImg {
+    height: 40%;
+    width: 100%;
+    background-image: url(../img/Chow-Mein.jpg);
+    background-size: cover;
+}
+
+.VegetarianRestaurantImg {
+    height: 40%;
+    width: 100%;
+    background-image: url(../img/Vegetarian-Restaurant.jpg);
+    background-size: cover;
+}
+
+.TurkishRestaurantImg {
+    height: 40%;
+    width: 100%;
+    background-image: url(../img/Turkish-Kebab.jpg);
+    background-size: cover;
+}
+
+.RestaurantButton {
+    background-color: #4B4266; 
+    border: black solid;
+    color: #e67e22;
+    display: inline-block;
+    text-align: center;
+    font-size: 3rem;
+    padding: 30px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 70%;
+    height: 50%;
+    margin: 10vh;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.FrontPageReview {
+    height: 80%;
+    width: 80%;
+    background-color: #4B4266;
+    padding-left: 5px;
+    padding-top: 10px;
+    border:black solid 2px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.Review {
+    color: goldenrod;
+} 
+
+.TextBorder {
+    text-shadow: black 0px 0px 2px;
+}
